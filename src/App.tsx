@@ -1,24 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
+import discordLogo from './assets/imgs/discord-icon.png'
 import './App.css';
+import AvHeader from './components/AvHeader';
+import TopBlock from './components/TopBlock';
+import Networks from './components/Networks';
+import AboutUs from './components/AboutUs';
+import Faq from './components/Faq';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+        <AvHeader />
+        <TopBlock/>
+        <AboutUs/>
+        <Networks className=''/>
+        <Faq/>
+        <footer>
+          <a 
+          href='https://discord.com/channels/884383956248694785/884383956248694788'
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          ><img src={discordLogo}/></a>
+        
+        </footer>
     </div>
   );
 }

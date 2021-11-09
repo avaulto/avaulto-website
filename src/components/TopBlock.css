@@ -1,0 +1,19 @@
+#top-block {
+    height: 500px;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+}
+#top-block h1{
+    font-size: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+    #top-block h1{
+        font-size: 50px;
+    }
+    
+}
+

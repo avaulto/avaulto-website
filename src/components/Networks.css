@@ -1,0 +1,97 @@
+#solana-network{
+    display: flex;
+}
+#network-icons {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    margin: 50px auto;
+    justify-content: space-around;
+}
+#network-icons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#network-icons img.active {
+    opacity: 1;
+}
+.group img{
+    width: 100px;
+}
+
+#support-networks {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.block {
+    border: 2px solid rgb(255 255 255 / 80%);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 66px rgb(0 0 0 / 30%);
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 5px;
+}
+
+.block-title {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.block-info {
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+#stake-btn{
+    padding: 11px 30px;
+    color: white;
+    background: black;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#stake-btn:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+#stake-btn span{
+    background: -webkit-linear-gradient(#f8ae0c, #f94544);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #group-two .block{
+        height: auto;
+    }
+    small{
+        font-size: 12px;
+    }
+    #group-two {
+        margin: 0;
+    }
+}
